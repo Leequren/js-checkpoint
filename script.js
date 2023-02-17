@@ -6,11 +6,12 @@ function createFlexItem(cat) {
                     <img src="${cat.img_link}" height="290" width="290">
                 </div>
                  <h2 class="description-header cat-${cat.id}">Описание></h2>
-                 <div class="description desc-cat-${cat.id}" style="display: block">
+                 <div class="description desc-cat-${cat.id}" style="display: none">
                     ${cat.favourite ? '<h3>Избранный</h3>' : ''}
                     <h3>Возраст:  ${cat.age}</h3>
                     <h3>Номер: ${cat.id}</h3>
                     <h3>Рейтинг: ${cat.rate}/10</h3>
+                    <h3>${cat.description}</h3>
                  </div>
             </div>`
 }
